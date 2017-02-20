@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#23ff0000">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <org.kans.zxb.view.SunView
+            android:id="@+id/txt"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dip"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+</FrameLayout>

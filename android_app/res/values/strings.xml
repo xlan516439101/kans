@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Kans</string>
+    
+    <string name="kans_choice_icon_text">"选择图片来源"</string>
+    <string name="kans_gallery_text">"相册"</string>
+    <string name="kans_camera_text">"相机"</string>
+    
+    <string name="kans_menu_scan">"扫一扫"</string>
+    <string name="kans_menu_scan_callback_title">"扫一扫返回结果:"</string>
+    <string name="kans_menu_seach">"搜索"</string>
+    
+    <string name="kans_remark_content">"文字:"</string>
+    <string name="kans_remark_content_hint">"填入备注文字内容"</string>
+    <string name="kans_remark_sound">"声音:"</string>
+    <string name="kans_remark_alarm">"闹钟:"</string>
+    <string name="kans_remark_picture">"图片:"</string>
+    <string name="kans_remark_video">"小视频:"</string>
+    
+    <string name="kans_bottom_vip">"会员"</string>
+    <string name="kans_bottom_favorite">"收藏"</string>
+    <string name="kans_bottom_group">"vip组"</string>
+    <string name="kans_bottom_setting">"设置"</string>
+    
+    <string name="kans_settings_name_text">"店名:"</string>
+    <string name="kans_settings_phone_text">"电话:"</string>
+    <string name="kans_settings_email_text">"email:"</string>
+    <string name="kans_settings_product_class_text">"产品类别:"</string>
+    <string name="kans_settings_product_list_text">"产品列表:"</string>
+    
+    <string name="kans_vip_buy">"Vip 购买"</string>
+    <string name="kans_vip_qq">"Vip QQ"</string>
+    <string name="kans_vip_wechat">"Vip 微信"</string>
+    <string name="kans_vip_phone">"Vip 电话"</string>
+    <string name="kans_vip_attach_edit">"Vip 编辑"</string>
+    <string name="kans_vip_user">"Vip 会员"</string>
+    <string name="kans_vip_group">"Vip 组"</string>
+    <string name="kans_vip_group_list">"Vip 组列表"</string>
+    <string name="kans_vip_credit">"Vip 积分"</string>
+    <string name="kans_vip_remark">"Vip 备注"</string>
+    <string name="kans_product">"产品"</string>
+    <string name="kans_product_list">"产品列表"</string>
+    <string name="kans_scan_planar">"扫描二维码"</string>
+    
+    <string name="kans_add_vip_user">"添加Vip会员"</string>
+    <string name="kans_edit_vip_user">"编辑Vip会员"</string>
+    <string name="kans_add_vip_group">"添加Vip分组"</string>
+    <string name="kans_edit_vip_group">"编辑Vip分组"</string>
+    <string name="kans_edit_product">"编辑产品"</string>
+    <string name="kans_add_product">"添加产品"</string>
+    
+    <string name="kans_product_search_hint">"输入名称或者备注以便搜索"</string>
+    <string name="kans_product_class">"产品类别"</string>
+    <string name="kans_product_please_input_all">"请填写完表单！"</string>
+    <string name="kans_positive_save_text">"确认保存?"</string>
+    <string name="kans_save_text">"保存"</string>
+    <string name="kans_del_text">"删除"</string>
+    <string name="kans_edit_text">"编辑"</string>
+    
+    <string name="kans_positive_yes_save_text">"保存"</string>
+    <string name="kans_negative_no_save_text">"不保存"</string>
+    <string name="kans_negative_text">"取消"</string>
+    <string name="kans_positive_text">"确定"</string>
+    
+    <string name="kans_del_double_verify">"在按确定一次即可删除!"</string>
+    <string name="kans_del_keep_one">"最后一个数据不允许删除!"</string>
+    
+    <string name="kans_save_succeed">"保存成功"</string>
+    <string name="kans_save_fail">"保存失败"</string>
+    <string name="kans_add_text">"添加"</string>
+    
+    <string name="kans_please_input_name">"请输入姓名"</string>
+    
+    <string name="kans_id_text">"Vip编号:"</string>
+    <string name="kans_vip_name_text">"姓名:"</string>
+    <string name="kans_name_text">"名称:"</string>
+    <string name="kans_credit_text">"积分:"</string>
+    <string name="kans_credit_point_text">"分"</string>
+    <string name="kans_number_text">"号码:"</string>
+    <string name="kans_sex_text">"性别:"</string>
+    <string name="kans_sex_boy_text">"男"</string>
+    <string name="kans_sex_girl_text">"女"</string>
+    <string name="kans_favorite_text">"收藏:"</string>
+    <string name="kans_birthday_text">"生日:"</string>
+    <string name="kans_city_text">"籍贯:"</string>
+    <string name="kans_city_text_hine">"填写故乡地址"</string>
+    <string name="kans_email_text">"邮箱:"</string>
+    <string name="kans_email_text_hine">"@填写邮箱"</string>
+    <string name="kans_name_text_hine">"此处不能为空"</string>
+    <string name="kans_price_text">"价格:"</string>
+    <string name="kans_price_text_hine">"输入价格(单位元)"</string>
+    <string name="kans_icon_text">"图片:"</string>
+    <string name="kans_price_class_text">"类别:"</string>
+    <string name="kans_planar_code_text">"条形码:"</string>
+    <string name="kans_planar_code_text_hine">"输入产品条形码"</string>
+    <string name="kans_remark_text">"备注:"</string>
+    <string name="kans_remark_text_hine">"填写相关信息"</string>
+    <string name="kans_vip_in_group_text">"所在组:"</string>
+    <string name="kans_phone_list_text">"电话:(至少添加一个)"</string>
+    <string name="kans_phone">"电话:"</string>
+    <string name="kans_wechat_list_text">"微信:"</string>
+    <string name="kans_qq_list_text">"QQ:"</string>
+    <string name="kans_buy_list_text">"购买产品:"</string>
+    <string name="kans_name_is_not_null">"名字不能为空"</string>
+    
+    <string name="vip_user_group_fragment_del_group">"删除组内成员"</string>
+    <string name="vip_user_favorite_fragment_remove_user">"删除收藏"</string>
+    <string name="vip_user_fragment_del_user">"删除会员"</string>
+    <string name="vip_user_list_fragment_list_user">"会员列表"</string>
+    
+    <string name="vip_user_favorite_empty">"无vip收藏"</string>
+    <string name="vip_group_fragment_list_vip_group">"vip分组列表"</string>
+    <string name="vip_group_fragment_add_vip_group">"添加vip分组"</string>
+    <string name="vip_group_fragment_modify_vip_group">"编辑vip分组"</string>
+    
+    <string name="product_class_fragment_list_product">"产品类列表"</string>
+    <string name="product_class_fragment_list_product_class">"产品类别列表"</string>
+    <string name="product_class_fragment_add_product_class">"添加产品类别"</string>
+    <string name="product_class_fragment_modify_product_class">"编辑产品类别"</string>
+    <string name="product_class_fragment_del_product_class">"删除产品类别"</string>
+    
+    
+    <string name="product_fragment_list_product">"产品列表"</string>
+    <string name="product_fragment_add_product">"添加产品"</string>
+    <string name="product_fragment_modify_product">"编辑产品"</string>
+    <string name="product_fragment_del_product">"删除产品"</string>
+    <string name="product_name_is_not_null">"名字不能为空"</string>
+    
+    
+    <string name="k_scan_planar_scan_text">将二维码放入框内, 即可自动扫描</string>
+    
+    
+    <string name="lunar_radio_text" tools:ignore="MissingTranslation">"农历"</string>
+    <string name="gregorian_radio_text" tools:ignore="MissingTranslation">"公历"</string>
+
+    <string name="lunar_fest_chunjie" translatable="false">春节</string>
+    <string name="lunar_fest_duanwu" translatable="false">端午节</string>
+    <string name="lunar_fest_zhongqiu" translatable="false">中秋节</string>
+    <string name="lunar_fest_yuandan" translatable="false">元旦</string>
+    <string name="lunar_fest_laodong" translatable="false">劳动节</string>
+    <string name="lunar_fest_guoqing" translatable="false">国庆节</string>
+    <string name="lunar_fest_yuanxiao" translatable="false">元宵节</string>
+    <string name="lunar_fest_qixi" translatable="false">七夕</string>
+    <string name="lunar_fest_chongyang" translatable="false">重阳节</string>
+    <string name="lunar_fest_qingnian" translatable="false">青年节</string>
+    <string name="lunar_fest_qingren" translatable="false">情人节</string>
+    <string name="lunar_fest_funv" translatable="false">妇女节</string>
+    <string name="lunar_fest_zhishu" translatable="false">植树节</string>
+    <string name="lunar_fest_yuren" translatable="false">愚人节</string>
+    <string name="lunar_fest_ertong" translatable="false">儿童节</string>
+    <string name="lunar_fest_jiandang" translatable="false">建党节</string>
+    <string name="lunar_fest_jianjun" translatable="false">建军节</string>
+    <string name="lunar_fest_jiaoshi" translatable="false">教师节</string>
+    <string name="lunar_fest_shengdan" translatable="false">圣诞节</string>
+
+    <string name="lunar_date_formatter">yyyy年MM月dd日</string>
+    <string name="lunar_leap" translatable="false">闰</string>
+    <string name="lunar_tenth_day" translatable="false">初十</string>
+    <string name="lunar_twentieth_day" tanslatable="false">二十</string>
+    <string name="lunar_thirtieth_day" translatable="false">三十</string>
+    <string name="lunar_year" translatable="false">年</string>
+    <string name="lunar_month" translatable="false">月</string>
+    <string name="lunar_day" translatable="false">日</string>
+    <string name="lunar_info_fmt" translatable="false">"，%s"</string>
+    <string name="lunar_detail_info_fmt1" translatable="false">"，农历%s"</string>
+    <string name="lunar_detail_info_fmt2" formatted="false" translatable="false">"，﻿农历%s – %s"</string>
+    
+     
+    
+  	<string name="file_default_search_text">搜索文件</string>
+  	<string name="file_search_setting_description">本地文件</string>
+	<string name="file_browser_app_name">文件管理</string>
+    <string name="file_browser_choice_other_path">请选择其它路径！</string>
+    <string name="onclick_double_back_goback">在按一次返回退出当前界面！</string>
+    <string name="file_browser_attribute_name">名称</string>
+    <string name="file_browser_attribute_path">路径</string>
+    <string name="file_browser_attribute_copy">拷贝</string>
+    <string name="file_browser_attribute_del">删除</string>
+    <string name="file_browser_attribute_rename">重命名</string>
+    <string name="file_browser_attribute_leng">查看文件大小</string>
+    <string name="file_browser_mkdir">创建文件夹</string>
+    <string name="file_browser_success">成功</string>
+    <string name="file_browser_fail">失败</string>
+    <string name="file_browser_isnull">为空</string>
+    <string name="file_browser_folder_count">文件夹数</string>
+    <string name="file_browser_file_count">文件数</string>
+    <string name="file_browser_all_count">总数</string>
+    <string name="file_browser_big_or_small">大小</string>
+    <string name="file_browser_file_big_or_small">文件大小</string>
+    <string name="file_browser_file_item_content_folder_1">"此分区	 剩余:"</string>
+    <string name="file_browser_file_item_content_folder_2">",总共:"</string>
+    <string name="file_browser_current">当前</string>
+    <string name="file_browser_copy_fail_file">拷贝失败的文件</string>
+    <string name="file_browser_copy_fail_file_count">个</string>
+    <string name="file_browser_del_fail_file">删除失败的文件</string>
+    <string name="file_browser_name_is_same"> 重命名的文件名与原文件名相同！</string>
+    <string name="file_browser_file">文件</string>
+    <string name="file_browser_folder">文件夹</string>
+    <string name="file_browser_mkdir_name_is_null">创建文件夹的文件名为空</string>
+    <string name="file_browser_paste">粘贴</string>
+    <string name="file_browser_del">删除</string>
+    <string name="file_browser_close">终止并关闭窗口</string>
+    <string name="file_browser_search_ing">正在搜索文件...</string>
+    <string name="file_browser_copy_ing">正在拷贝文件...</string>
+    <string name="file_browser_del_ing">正在删除文件...</string>
+    <string name="file_browser_computer_ing">正在计算文件大小...</string>
+    <string name="file_browser_computer_leng_title">文件大小</string>
+    
+    
+    
+    
+    
+    
+    
+    <string name="birthday_widget_semicolon_time">:</string>
+    <string name="birthday_widget_semicolon_date">-</string>
+    <string name="birthday_widget_solar">阳历</string>
+    <string name="birthday_widget_lundar">阴历</string>
+    <string name="current_version">"当前版本为"</string>
+    <string name="birthday_year">年</string>
+    <string name="birthday_month">月</string>
+    <string name="birthday_day">日</string>
+    <string name="birthday_hour">时</string>
+    <string name="birthday_minute">分</string>
+    <string name="birthday__day">天</string>
+    <string name="birthday_tomorrow">明天</string>
+    <string name="birthday_today">今天</string>
+    <string name="birthday_allday">全天</string>
+    <string name="birthday_man_madam">先生(女士)</string>
+    
+    <string name="birthday_current_day">当天</string>
+    <string name="birthday_one_day">一天</string>
+    <string name="birthday_two_day">两天</string>
+    <string name="birthday_one_week">一周</string>
+    <string name="birthday_two_week">两周</string>
+    <string name="birthday_one_month">一月</string>
+    <string name="birthday_subjoin">备注</string>
+    
+    <string name="birthday_del_all_contacts">正在删除联系人……</string>
+    <string name="birthday_save_all_contacts">正在保存联系人……</string>
+    <string name="birthday_back_no_save">数据没有保存，如需保存点击保存按钮，不保存两秒之后可以退出！</string>
+    <string name="birthday_what_are_you_doing">菜单</string>
+    <string name="birthday_input_contacts_name">输入联系人姓名</string>
+    <string name="birthday_chice_alert_type">选择提醒类型</string>
+    <string name="birthday_chice_alert_time">选择提醒时间</string>
+    <string name="birthday_chice_alert_time_before">提前提醒类型</string>
+    
+    <string name="birthday_icontacts_name">姓名</string>
+    <string name="birthday_contacts_birthday">生日</string>
+    <string name="birthday_contacts_birthday_year">岁</string>
+    <string name="birthday_alert_type">类型</string>
+    <string name="birthday_alert_time">时间</string>
+    
+    <string name="birthday_button_ok">确定</string>
+    <string name="birthday_button_cancel">取消</string>
+    <string name="birthday_button_back">返回</string>
+    <string name="birthday_button_save">保存</string>
+    <string name="birthday_button_no_save">不保存</string>
+    <string name="birthday_data_no_save">数据没有保存</string>
+    <string name="birthday_do_save">是否保存数据？</string>
+    <string name="birthday_add_contact_button">添加联系人</string>
+    
+    
+    <string name="birthday_use_photo_as_primary">使用此头像</string>
+    <string name="birthday_changePicture">更改头像</string>
+    <string name="birthday_removePicture">删除头像</string>
+    <string name="birthday_attachToContact">好友头像</string>
+    <string name="birthday_take_photo">拍照</string>
+    <string name="birthday_pick_photo">从图库中选择一张</string>
+    <string name="birthday_photoPickerNotFoundText">照相机没拍到照片</string>
+    <string name="birthday_photoPickerNotFoundText1">手机里面没有照片</string>
+    <string name="birthday_photoPickerNotFoundText2">剪辑照片出错</string>
+    <string name="birthday_spinner_group">加入分组</string>
+    <string name="birthday_near_schedule">近期日程</string>
+    <string name="birthday_birthday_title">生日提醒</string>
+    <string name="birthday_birthday_title_add">添加好友生日</string>
+    
+    
+    
+</resources>

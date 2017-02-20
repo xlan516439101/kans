@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/birthday_center_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="25dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/birthday_data_pick_dialog_show_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:text="@string/birthday_widget_solar"
+            android:textColor="#FF000033"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/birthday_data_pick_dialog_show_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="@string/birthday_widget_lundar"
+            android:textOn="@string/birthday_widget_solar" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="7dip"
+        android:background="#FF009966" />
+
+    <LinearLayout
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="2.5dip"
+        android:layout_marginRight="2.5dip"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/birthday_year"
+            android:textColor="#FF000033"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="30dip"
+            android:background="#ff000033" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/birthday_month"
+            android:textColor="#FF000033"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="30dip"
+            android:background="#ff000033" />
+        
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/birthday_day"
+            android:textColor="#FF000033"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <org.kans.zxb.view.DatePicker
+        android:id="@+id/birthday_data_pick_dialog_date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="7dip"
+        android:background="#FF009966" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="9dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/birthday_data_pick_dialog_button_ok"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/birthday_default_button"
+            android:gravity="center"
+            android:padding="2dip"
+            android:text="@string/birthday_button_ok"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/birthday_data_pick_dialog_button_cancel"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/birthday_default_button"
+            android:gravity="center"
+            android:padding="2dip"
+            android:text="@string/birthday_button_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

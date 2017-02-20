@@ -1,0 +1,1 @@
+package org.kans.zxb;interface IKService {}

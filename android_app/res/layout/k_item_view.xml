@@ -1,0 +1,83 @@
+<org.kans.zxb.view.KItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/call_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kitem_background"
+    android:minHeight="48dip" >
+
+    <ImageView
+        android:id="@+id/left_btn_delete"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:src="@drawable/kitem_left_delete" />
+
+    <FrameLayout
+        android:id="@android:id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="#ffff0000"
+            android:focusable="false"
+            android:text="@string/kans_del_text"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/content_area"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/kitem_background"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@android:id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerInside" />
+
+        <FrameLayout
+            android:id="@android:id/content"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@android:id/widget_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#ffff0000" />
+
+        <ImageView
+            android:id="@android:id/icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:src="@drawable/kitem_open_arraw" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="11dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/kitem_divider_vertical_dark"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</org.kans.zxb.view.KItemView>

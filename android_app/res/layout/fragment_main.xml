@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <org.kans.zxb.view.KViewPager
+        android:id="@+id/fragment_main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/fragment_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/k_main_bottom_bg"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/fragment_main_bottom_vip"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/k_vip_list"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="50dip"
+            android:background="@color/k_item_press" />
+
+        <TextView
+            android:id="@+id/fragment_main_bottom_favorite"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/k_vip_favoriate"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="50dip"
+            android:background="@color/k_item_press" />
+
+        <TextView
+            android:id="@+id/fragment_main_bottom_group"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/k_vip_group"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="50dip"
+            android:background="@color/k_item_press" />
+
+        <TextView
+            android:id="@+id/fragment_main_bottom_setting"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/k_vip_setting"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

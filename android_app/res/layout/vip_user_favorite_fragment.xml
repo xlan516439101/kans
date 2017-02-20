@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dip" >
+
+    <GridView
+        android:id="@+id/vip_user_favorite_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="3dip"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="3dip" />
+
+    <TextView
+        android:id="@+id/vip_user_favorite_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dip"
+        android:background="@drawable/k_edit_background_white"
+        android:gravity="center"
+        android:text="@string/vip_user_favorite_empty"
+        android:textColor="@color/k_header_title_press"
+        android:textSize="21sp"
+        android:visibility="gone" />
+
+</FrameLayout>

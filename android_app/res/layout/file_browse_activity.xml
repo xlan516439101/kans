@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#FF282E53"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:contentDescription="@null"
+            android:layout_marginRight="40dip"
+            android:onClick="onBackView"
+            android:padding="5dip"
+            android:src="@drawable/file_browse_ico" />
+
+        <TextView
+            android:id="@+id/file_browse_activity_path"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|bottom"
+            android:padding="3dip"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/file_browser_mkdir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClick"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/file_browser_mkdir"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/file_browser_paste"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClick"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/file_browser_paste"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <ListView
+            android:id="@+id/file_browse_activity_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/file_browse_activity_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textColor="#FFFF0000"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/file_browse_activity_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dip" >
+
+                <TextView
+                    android:id="@+id/file_browse_activity_browse_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

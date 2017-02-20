@@ -1,0 +1,46 @@
+<org.kans.zxb.view.SquarFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="1dip"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:background="#AAFFFFFF"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:gravity="center_vertical|left"
+            android:textColor="#FF009997"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/credit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="5dip"
+            android:paddingRight="10dip"
+            android:gravity="center"
+            android:textColor="#FFFF5500"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</org.kans.zxb.view.SquarFrameLayout>

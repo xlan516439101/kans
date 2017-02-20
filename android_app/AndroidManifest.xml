@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.kans.zxb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- appId:wxaff8889e15431ec8c -->
+    <!-- "_mmessage_sdkVersion"	0x23010001 -->
+    <!-- "_mmessage_appPackage" "com.tencent.mm.openapi" -->
+    <!-- "SendAppMessageWrapper_AppId" "wx4310bbd51be7d979" -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_KEYBOARD_LAYOUT" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS" />
+    <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES" />
+    <uses-permission android:name="android.permission.OEM_UNLOCK_STATE" />
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.MANAGE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.USER_ACTIVITY" />
+    <uses-permission android:name="android.permission.CHANGE_APP_IDLE_STATE" />
+    <uses-permission android:name="android.permission.PEERS_MAC_ADDRESS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="org.kans.zxb.KApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.kans.zxb.ui.KansActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.MainActivity" >
+        </activity>
+        <activity
+            android:name="org.kans.zxb.file.FileBrowseActivity"
+            android:icon="@drawable/file_browse_ico"
+            android:label="@string/file_browser_app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name="WelcomeActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.WelcomeFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipUserListActivity"
+            android:exported="true"
+            android:label="@string/kans_vip_user"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipUserListFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipUserActivity"
+            android:exported="true"
+            android:label="@string/kans_vip_user"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipUserFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipUserFavoriteActivity"
+            android:exported="true"
+            android:label="@string/kans_vip_user"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipUserFavoriteFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipUserGroupActivity"
+            android:exported="true"
+            android:label="@string/kans_vip_user"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipUserGroupFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="KSettingsActivity"
+            android:exported="true"
+            android:label="@string/kans_product_class"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.KSettingsFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipCreditListActivity"
+            android:exported="true"
+            android:label="@string/kans_vip_credit"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipCreditListFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipRemarkActivity"
+            android:exported="true"
+            android:label="@string/kans_vip_remark"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipRemarkFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipRemarkListActivity"
+            android:exported="true"
+            android:label="@string/kans_vip_remark"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipRemarkListFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipAttachEditActivity"
+            android:exported="true"
+            android:label="@string/kans_vip_attach_edit"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipAttachEditFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipGroupActivity"
+            android:exported="true"
+            android:label="@string/kans_vip_group"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipGroupFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipGroupListActivity"
+            android:exported="true"
+            android:label="@string/kans_vip_group_list"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipGroupListFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipBuyActivity"
+            android:exported="true"
+            android:label="@string/kans_product"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipBuyFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="VipBuyListActivity"
+            android:exported="true"
+            android:label="@string/kans_product"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.VipBuyListFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="ProductActivity"
+            android:exported="true"
+            android:label="@string/kans_product"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.ProductFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="ProductListActivity"
+            android:exported="true"
+            android:label="@string/kans_product_list"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.ProductListFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="ProductClassActivity"
+            android:exported="true"
+            android:label="@string/kans_product_class"
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.ProductClassFragment" />
+        </activity-alias>
+        
+        <activity-alias
+            android:name="KScanPlanarActivity"
+            android:exported="true"
+            android:label="@string/kans_scan_planar"
+            
+            android:targetActivity="org.kans.zxb.ui.KansActivity" >
+            <meta-data
+                android:name="org.kans.zxb.FRAGMENT_CLASS"
+                android:value="org.kans.zxb.fragment.KScanPlanarFragment" />
+        </activity-alias>
+    </application>
+
+</manifest>

@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/birthday_center_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="25dip" >
+
+    <TextView
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/birthday_chice_alert_time"
+        android:textColor="#FF000033"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="13dip"
+        android:layout_marginRight="13dip"
+        android:layout_marginTop="7dip"
+        android:background="#FF009966" />
+
+    <!-- show time -->
+
+    <LinearLayout
+        android:layout_width="110dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/birthday_hour"
+            android:textColor="#FF000033"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/birthday_minute"
+            android:textColor="#FF000033"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.android.xhl.birthday.widget.BirthdayTimePicker
+        android:id="@+id/birthday_time_pick_dialog_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="7dip"
+        android:background="#FF009966" />
+    <!-- show time type before -->
+
+    <LinearLayout
+        android:id="@+id/birthday_time_pick_dialog_checkboxs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:gravity="center"
+            android:text="@string/birthday_chice_alert_time_before"
+            android:textColor="#FF000033"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="13dip"
+            android:layout_marginRight="13dip"
+            android:layout_marginTop="7dip"
+            android:background="#FF009966" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/birthday_time_pick_dialog_checkbox_current_day"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/birthday_check_button"
+                android:checked="true"
+                android:text="@string/birthday_current_day"
+                android:textColor="#FF000033" />
+
+            <CheckBox
+                android:id="@+id/birthday_time_pick_dialog_checkbox_one_day"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/birthday_check_button"
+                android:text="@string/birthday_one_day"
+                android:textColor="#FF000033" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/birthday_time_pick_dialog_checkbox_two_day"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/birthday_check_button"
+                android:text="@string/birthday_two_day"
+                android:textColor="#FF000033" />
+
+            <CheckBox
+                android:id="@+id/birthday_time_pick_dialog_checkbox_one_week"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/birthday_check_button"
+                android:text="@string/birthday_one_week"
+                android:textColor="#FF000033" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/birthday_time_pick_dialog_checkbox_two_week"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/birthday_check_button"
+                android:text="@string/birthday_two_week"
+                android:textColor="#FF000033" />
+
+            <CheckBox
+                android:id="@+id/birthday_time_pick_dialog_checkbox_one_month"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/birthday_check_button"
+                android:text="@string/birthday_one_month"
+                android:textColor="#FF000033" />
+        </LinearLayout>
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1.5dip"
+	        android:layout_marginLeft="3dip"
+	        android:layout_marginRight="3dip"
+	        android:layout_marginTop="7dip"
+	        android:background="#FF009966" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="9dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/birthday_time_pick_dialog_button_ok"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/birthday_default_button"
+            android:gravity="center"
+            android:padding="2dip"
+            android:text="@string/birthday_button_ok"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/birthday_time_pick_dialog_button_cancel"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/birthday_default_button"
+            android:gravity="center"
+            android:padding="2dip"
+            android:text="@string/birthday_button_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

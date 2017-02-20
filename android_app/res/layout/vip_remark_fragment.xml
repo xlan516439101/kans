@@ -1,0 +1,232 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip"
+        android:paddingRight="5dip" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dip" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="5dip"
+            android:gravity="left"
+            android:text="@string/kans_remark_content"
+            android:textColor="@color/k_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/k_space_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/vip_remart_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dip"
+                android:background="@drawable/k_edit_background_white"
+                android:gravity="left|top"
+                android:hint="@string/kans_remark_content_hint"
+                android:minHeight="100dip"
+                android:textColor="@color/k_text_color_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dip" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="5dip"
+            android:gravity="left"
+            android:text="@string/kans_remark_sound"
+            android:textColor="@color/k_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/k_space_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/vip_remark_recoder_button"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:layout_margin="8dip"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/vip_remark_recoder"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="8dip"
+                android:gravity="center"
+                android:textColor="@color/k_text_color_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/kans_remark_alarm"
+                android:textColor="@color/k_text_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/k_space_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dip" >
+
+            <DatePicker
+                android:id="@+id/vip_remark_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="50dip"
+                android:layout_marginRight="50dip"
+                android:layout_marginTop="20dip"
+                android:background="@color/file_list_item_background_press" />
+
+            <TimePicker
+                android:id="@+id/vip_remark_timepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dip" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="5dip"
+            android:gravity="left"
+            android:text="@string/kans_remark_picture"
+            android:textColor="@color/k_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/k_space_bg"
+            android:gravity="center"
+            android:minHeight="200dip"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/vip_remark_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dip"
+                android:background="@drawable/birthday_center_background"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:src="@drawable/k_icon_take_photo" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="5dip"
+            android:gravity="center"
+            android:text="@string/kans_remark_video"
+            android:textColor="@color/k_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/k_space_bg"
+            android:gravity="center"
+            android:minHeight="200dip"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <SurfaceView
+                android:id="@+id/vip_remark_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dip"
+                android:background="@drawable/birthday_center_background"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/vip_remark_video_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dip"
+                android:background="@drawable/birthday_center_background"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:src="@drawable/k_icon_revord_video" />
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>

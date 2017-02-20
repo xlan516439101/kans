@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/file_browser_attribute_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="40dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="@string/file_browser_attribute_name"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/file_browser_attribute_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|top"
+        android:minHeight="40dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="@string/file_browser_attribute_path"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/file_browser_attribute_copy"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center"
+        android:paddingLeft="30dip"
+        android:text="@string/file_browser_attribute_copy"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/file_browser_attribute_del"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center"
+        android:paddingLeft="30dip"
+        android:text="@string/file_browser_del"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/file_browser_attribute_rename"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center"
+        android:paddingLeft="30dip"
+        android:text="@string/file_browser_attribute_rename"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/file_browser_attribute_leng"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center"
+        android:paddingLeft="30dip"
+        android:text="@string/file_browser_attribute_leng"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/k_space_bg_press"
+    android:paddingTop="20dip"
+    android:paddingBottom="5dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/k_space_bg_unpress"
+        android:gravity="center"
+        android:text="@string/kans_choice_icon_text"
+        android:textColor="@color/k_text_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/k_space_bg_unpress"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_margin="10dip"
+            android:gravity="center"
+            android:text="@string/kans_gallery_text"
+            android:textColor="@color/k_text_color"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_margin="5dip"
+            android:background="@color/k_item_press" />
+
+        <TextView
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_margin="10dip"
+            android:gravity="center"
+            android:text="@string/kans_camera_text"
+            android:textColor="@color/k_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/k_cancel_button_background"
+        android:gravity="center"
+        android:text="@string/kans_negative_text"
+        android:textColor="@color/k_text_color_white"
+        android:textSize="20sp" />
+
+</LinearLayout>

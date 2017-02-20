@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="5dip"
+    android:paddingRight="5dip">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dip" />
+
+    <LinearLayout
+        android:id="@+id/add_vip_group_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_margin="2dip"
+        android:background="@drawable/k_space_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:padding="2dip"
+            android:src="@drawable/k_menu_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:text="@string/kans_add_text"
+            android:textColor="@color/k_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="left|bottom"
+        android:paddingBottom="8dip"
+        android:paddingLeft="20dip"
+        android:text="@string/vip_group_fragment_list_vip_group"
+        android:textColor="@color/k_title_text_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:background="@drawable/k_edit_background_white"
+        android:padding="5dip" >
+
+        <ListView
+            android:id="@+id/add_vip_group_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/k_listrow_divider"
+            android:scrollbars="none" />
+    </FrameLayout>
+
+</LinearLayout>

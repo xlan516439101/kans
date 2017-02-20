@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="k_item_press_dim">#FFa9a9a9</color>
+    <color name="k_item_press">#FFD9D9D9</color>
+    <color name="k_header_title_unpress">#FF0079FF</color>
+    <color name="k_header_title_press">#FF777777</color>
+    <color name="k_text_color">#FF121212</color>
+    <color name="k_text_color_light">#FF323232</color>
+    <color name="k_text_color_remark">#FF777777</color>
+    <color name="k_text_color_white">#FFFEFEFE</color>
+    <color name="k_background_color">#FFFEFEFE</color>
+    <color name="k_background_color_deep">#FF121212</color>
+    <color name="k_title_background_color">#FFededed</color>
+    <color name="k_title_text_color">#FF7d7d7d</color>
+    <color name="file_list_item_background_press">#DDDDDDDD</color>
+    
+    <color name="k_scan_planar_result_view">#b0000000</color>
+    <color name="k_scan_planar_viewfinder_mask">#60000000</color>
+    <color name="k_scan_planar_possible_result_points">#c0ffff00</color>
+
+</resources>

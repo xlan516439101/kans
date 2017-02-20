@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="kans_rouduct_icon_size">150dp</dimen>
+
+    <dimen name="birthday_month_day_picker_text_hight">30dp</dimen>
+    
+</resources>
